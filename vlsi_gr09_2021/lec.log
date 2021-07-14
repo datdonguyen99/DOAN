@@ -1,0 +1,79 @@
+                          CONFORMAL (R)
+                   Version 20.10-p100 (01-May-2020) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2019. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 424 days old. You can download the latest version from http://downloads.cadence.com.
+
+0
+CPU time     : 1.11    seconds
+Elapse time  : 29      seconds
+Memory usage : 309.43  M bytes
+// Command: read_library slow.lib -lib -revised
+// Parsing file slow.lib ...
+// Warning: (RTL9.17) Cell doesn't have any output pins or all output pins are undriven (blackboxed) (occurrence:1)
+// Note: (RTL9.26) Liberty pin with internal_node use default input_map (occurrence:16)
+// Note: Read Liberty library successfully
+0
+CPU time     : 1.44    seconds
+Elapse time  : 31      seconds
+Memory usage : 327.05  M bytes
+// Command: read_design bound_flasher.v -verilog -golden
+// Parsing file bound_flasher.v ...
+// Golden root module is set to 'bound_flasher'
+// Warning: (RTL7.10c) Bit-wise operation with different data sizes (occurrence:4)
+// Note: Read VERILOG design successfully
+0
+// Command: read_design bound_flasher_m.v -verilog -revised
+// Parsing file bound_flasher_m.v ...
+// Revised root module is set to 'bound_flasher'
+// Warning: (RTL14) Signal has input but it has no output (occurrence:6)
+// Note: Read VERILOG design successfully
+0
+// Command: set_mapping_method -name only
+0
+// Command: set_system_mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+CPU time     : 1.90    seconds
+Elapse time  : 43      seconds
+Memory usage : 366.77  M bytes
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            3      16     19        38      
+--------------------------------------------------------------------------------
+Revised           3      16     19        38      
+================================================================================
+0
+// Command: map_key_points
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            3      16     19        38      
+--------------------------------------------------------------------------------
+Revised           3      16     19        38      
+================================================================================
+0
+// Command: add_compared_points -all
+// 35 compared points added to compare list
+0
+// Command: compare
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           16     19        35      
+================================================================================
+0
